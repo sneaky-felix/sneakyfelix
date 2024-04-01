@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome</title>
-  <link rel="shortcut icon" href="https://people.reed.edu/~emilyd/notebook.png">
-  <link rel="stylesheet" href="https://people.reed.edu/~emilyd/yas.css">
+  <link rel="shortcut icon" href="https://sneakyfelix.com/notebook.png">
+  <link rel="stylesheet" href="https://sneakyfelix.com/yas.css">
 </head>
 <body>
 
-    <a href="https://people.reed.edu/~emilyd/contents.html">
+    <a href="https://sneakyfelix.com/contents.html">
   <div class="book-container">
     <div class="book">
-      <img src="https://people.reed.edu/~emilyd/frontjournal.png" alt="Image 1" class="page page1">
-      <img src="https://people.reed.edu/~emilyd/backjournal.png" alt="Image 2" class="page page2">
+      <img src="https://sneakyfelix.com/frontjournal.png" alt="Image 1" class="page page1">
+      <img src="https://sneakyfelix.com/backjournal.png" alt="Image 2" class="page page2">
     </div>
   </div>
 </a>
 
 <footer class = "bottomright">
- <a href="https://people.reed.edu/~emilyd/cv.html" class="bottomright-link" onclick="window.open(this.href,'targetWindow',
+ <a href="https://sneakyfelix.com/cv.html" class="bottomright-link" onclick="window.open(this.href,'targetWindow',
   `toolbar=no,
    location=no,
    status=no,
