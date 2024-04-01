@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>forum</title>
+    <link rel="shortcut icon" href="https://people.reed.edu/~emilyd/fuckavirgin.png">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+            margin: 0 10px;
+        }
+
+        .option:hover {
+            background-color: #f91e1e;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+        @font-face {
+            font-family: 'YourCustomFont';
+            src: url('fonts/FA_YRMCSKYMUW.TTF') format('truetype');
+        }
+
+        div {
+            font-family: 'YourCustomFont', sans-serif;
+            font-size: 16px;
+        }
+
+        .container {
+            position: relative;
+            width: 1300px;
+            height: 520px;
+        }
+
+        .text-div {
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            background-color: #ffffff00;
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px; 
+        }
+
+        iframe {
+            width: 49%; 
+            height: 80%; 
+        }
+    </style>
+</head>
+<body>
+    <div id="options">
+        <a href="https://people.reed.edu/~emilyd/forum.html">  <div class="option" id="forum"> forum</div> </a>
+        <a href="https://people.reed.edu/~emilyd/writings.html"> <div class="option" id="writings"> writings</div> </a>
+        <a href="https://people.reed.edu/~emilyd/interviews.html"> <div class="option" id="interviews"> interviews</div> </a>
+        <a href="https://people.reed.edu/~emilyd/contactus.html"> <div class="option" id="contact"> contact</div> </a>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvzIEb8lA11MH6_1pk6xgER5Q3oGsxeeDclvers94vAm0Fbg/viewform"></iframe>
+    </div>
+</body>
+</html>

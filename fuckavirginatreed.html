@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fuck a virgin at reed </title>
+    <link rel="shortcut icon" href="https://people.reed.edu/~emilyd/fuckavirgin.png">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #main-image {
+            width: 350px;
+            height: 250px;
+            margin:  auto;
+            background-image: url('https://people.reed.edu/~emilyd/fuckavirgin.png'); 
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+            margin: 0 10px;
+        }
+
+        .option:hover {
+            background-color: #f91e1e;
+        }
+
+a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+        .hidden {
+            display: none; }
+
+        @font-face {
+    font-family: 'YourCustomFont';
+    src: url('fonts/FA_YRMCSKYMUW.TTF') format('truetype');
+  }
+div {font-family: 'YourCustomFont', sans-serif;
+  font-size: 16px}
+
+  .container {
+    position: relative;
+    width: 1300px; 
+    height: 520px; 
+    padding: 20px;
+}
+  .text-div {
+    position: absolute;
+    width: 200px; 
+    height: 50px; 
+    background-color: #ffffff00;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+    </style>
+</head>
+<body>
+    <div id="main-image"></div>
+    <div id="options">
+        <a href="https://people.reed.edu/~emilyd/forum.html">  <div class="option" id="forum"> forum</div> </a>
+        <a href="https://people.reed.edu/~emilyd/writings.html"> <div class="option" id="writings"> writings</div> </a>
+        <a href="https://people.reed.edu/~emilyd/interviews.html"> <div class="option" id="interviews"> interviews</div> </a>
+        <a href="https://people.reed.edu/~emilyd/contactus.html"> <div class="option" id="contact"> contact</div> </a>
+    </div>
+
+    <div class="container">
+        <div class="text-div" id="text1">1381. Gay sex is a mindset, not an act <3 </div>
+        <div class="text-div" id="text2">303. oh my god just practice safe sex its not that hard </div>
+        <div class="text-div" id="text3">1342. HAVE SEX: IN COMMONS </div>
+        <div class="text-div" id="text4">72. which means: you are probably a freak i want: to tear you like a piece of paper (sexual)</div>
+        <div class="text-div" id="text5">15. reedies are 'feminists' until they encounter a femme person likes sex and presents themself in a feminine way then theyre a "stupid slut" </div>
+        <div class="text-div" id="text7">1656. Can: the drug and sex ring In Trillium <br> Please: stop leaving their used condoms, needles, and lighters <br> In: the laundry room and lint screens <br> Its: scary </div>
+        <div class="text-div" id="text8">1361. coercion: is not how you have sex with your partner <br> nor is: emotional manipulation and guilt tripping about the lack of sex </div>
+        <div class="text-div" id="text9">1198. why preach 'safer sex' if you dont practice it</div>
+        <div class="text-div" id="text10">805. you: said that if we weren't friends you would have sex with me for $50 we: should stop being friends.</div>
+        <div class="text-div" id="text11">744. a: wise man once said <br>'Id rather reed be a sexually tense community than just a tense community' <br> is: this sexual tension? <br> or: just tension? </div>
+        <div class="text-div" id="text12">614. Kerr(odb) first floor: please don't have sex in the kitchen <3 <br> it's a communal space and yall barricaded that door shut for 3 hours </div>    
+        <div class="text-div" id="text13">564. something ive been realizing/thinking over a lot <br> is that: even w casual hookups its important to keep in mind <br> sex: is a really intimate way of knowing someone </div> 
+        </div>
+<script>
+ window.addEventListener('load', function () {
+            const textDivs = document.querySelectorAll('.text-div');
+            const container = document.querySelector('.container');
+            const image = document.querySelector('#main-image');
+            const minDistance = 20; 
+
+            function checkCollision(div1, div2) {
+                const rect1 = div1.getBoundingClientRect();
+                const rect2 = div2.getBoundingClientRect();
+                return (
+                    rect1.left < rect2.right + minDistance &&
+                    rect1.right + minDistance > rect2.left &&
+                    rect1.top < rect2.bottom + minDistance &&
+                    rect1.bottom + minDistance > rect2.top
+                );
+            }
+
+            function getRandomPosition(container, div) {
+                const maxAttempts = 100;
+                let attempts = 0;
+
+                do {
+                    const randomX = Math.floor(Math.random() * (container.clientWidth - div.clientWidth));
+                    const randomY = Math.floor(Math.random() * (container.clientHeight - div.clientHeight));
+
+                    div.style.left = randomX + 'px';
+                    div.style.top = randomY + 'px';
+
+                    if (checkCollision(div, image)) {
+                        continue;
+                    }
+
+                    let overlap = false;
+
+                    for (const otherDiv of textDivs) {
+                        if (div !== otherDiv && checkCollision(div, otherDiv)) {
+                            overlap = true;
+                            break;
+                        }
+                    }
+
+                    if (!overlap) {
+                        return;
+                    }
+
+                    attempts++;
+                } while (attempts < maxAttempts);
+            }
+
+            function arrangeTextDivs() {
+                for (const textDiv of textDivs) {
+                    getRandomPosition(container, textDiv);
+                }
+            }
+
+            window.addEventListener('resize', arrangeTextDivs);
+            arrangeTextDivs(); 
+        });
+</script>
+</body>
+</html>
