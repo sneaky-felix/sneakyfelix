@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="shortcut icon" href="https://people.reed.edu/~emilyd/notebook.png">
+  <link rel="stylesheet" href="https://people.reed.edu/~emilyd/yas.css">
+</head>
+<body>
+
+    <a href="https://people.reed.edu/~emilyd/contents.html">
+  <div class="book-container">
+    <div class="book">
+      <img src="https://people.reed.edu/~emilyd/frontjournal.png" alt="Image 1" class="page page1">
+      <img src="https://people.reed.edu/~emilyd/backjournal.png" alt="Image 2" class="page page2">
+    </div>
+  </div>
+</a>
+
+<footer class = "bottomright">
+ <a href="https://people.reed.edu/~emilyd/cv.html" class="bottomright-link" onclick="window.open(this.href,'targetWindow',
+  `toolbar=no,
+   location=no,
+   status=no,
+   menubar=no,
+   scrollbars=yes,
+   resizable=yes,
+   width=400,
+   height=500`);
+return false;">cv</a>
+</footer>
+  <script src="script2.js"></script>
+</body>
+</html>
